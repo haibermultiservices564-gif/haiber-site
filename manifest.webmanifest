@@ -4,7 +4,7 @@
   "description": "Votre communication, notre mission ! Conception, packaging, impression, branding véhicule, objets publicitaires et résine à Cissin, Ouagadougou.",
   "start_url": "./index.html",
   "display": "standalone",
-  "background_color": "#fbfaf7",
+  "background_color": "#ffffff",
   "theme_color": "#3a4f9e",
   "lang": "fr",
   "icons": [
