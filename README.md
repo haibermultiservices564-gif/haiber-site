@@ -22,7 +22,7 @@ Double-cliquez sur `index.html` (Chrome, Edge ou Firefox). Aucun serveur, aucune
 - **Galerie des 9 visuels officiels HaiBer** avec lightbox et navigation au clavier.
 - **Offre scolaire** issue de l’application, avec avantages partenaires.
 - **Sections complètes** : processus de production, pourquoi nous choisir, témoignages, FAQ (dont les conseils flyers : A5, recto ou recto-verso, format sur mesure, papier 90–135 g/m²), contact avec formulaire WhatsApp, newsletter, footer, bouton WhatsApp flottant.
-- **Design responsive** mobile/tablette/desktop, palette claire (fond crème, surfaces bleu très pâle), animations d'apparition, accessibilité et métadonnées SEO/Open Graph.
+- **Design responsive** mobile/tablette/desktop, univers blanc haute lisibilité, accents bleu/magenta/orange, motion design (barre de progression, compteurs animés, marquee, orbites, icônes flottantes, dock d'accès rapide), accessibilité et métadonnées SEO/Open Graph.
 
 ## Identité et données utilisées
 

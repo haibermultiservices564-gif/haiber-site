@@ -15,7 +15,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="css/styles.css?v=2">
+  <link rel="stylesheet" href="css/styles.css?v=3">
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -48,6 +48,8 @@
       <a href="https://wa.me/2266879710?text=Bonjour%20HaiBer%2C%20je%20souhaite%20un%20devis." target="_blank" rel="noopener">WhatsApp : +226 06 87 97 10</a>
     </div>
   </div>
+
+  <div class="scroll-progress" id="scroll-progress" aria-hidden="true"></div>
 
   <!-- En-tête -->
   <header class="site-header" id="header">
@@ -109,6 +111,7 @@
         </div>
 
         <div class="hero-visual reveal" aria-label="Aperçu des réalisations HaiBer">
+          <div class="hero-orbit" aria-hidden="true"><span></span><span></span><span></span></div>
           <div class="hero-main">
             <img src="assets/galerie/couverture.jpg" alt="Présentation des services HaiBer Multi-Services">
           </div>
@@ -117,6 +120,14 @@
           </div>
           <div class="hero-tile tile-bottom">
             <img src="assets/galerie/resine.jpg" alt="Atelier résine HaiBer">
+          </div>
+          <div class="float-icons" aria-hidden="true">
+            <span class="float-icon fi-1">🎨</span>
+            <span class="float-icon fi-2">📦</span>
+            <span class="float-icon fi-3">🖨️</span>
+            <span class="float-icon fi-4">👕</span>
+            <span class="float-icon fi-5">🎬</span>
+            <span class="float-icon fi-6">💎</span>
           </div>
           <div class="hero-sticker">
             <span class="sticker-star">✦</span>
@@ -140,6 +151,14 @@
         <button class="category-pill" data-filter="Packs promotionnels"><span>💥</span> Packs promo</button>
       </div>
     </section>
+
+    <!-- BANDEAU SIGNATURE HAI BER -->
+    <div class="signature-marquee" aria-hidden="true">
+      <div class="marquee-track">
+        <span>Design qui parle</span><span>Impression qui dure</span><span>Packaging qui protège</span><span>Branding qui marque</span><span>Objets qui fidélisent</span><span>Résine qui surprend</span><span>Devis en 24 h</span><span>Livraison partout au BF</span>
+        <span>Design qui parle</span><span>Impression qui dure</span><span>Packaging qui protège</span><span>Branding qui marque</span><span>Objets qui fidélisent</span><span>Résine qui surprend</span><span>Devis en 24 h</span><span>Livraison partout au BF</span>
+      </div>
+    </div>
 
     <!-- BOUTIQUE -->
     <section class="section shop" id="boutique">
@@ -221,7 +240,7 @@
           <h2>Créez votre devis en quelques clics.</h2>
           <p>Choisissez votre atelier, indiquez vos quantités et recevez une estimation immédiate. Nous finalisons ensemble les détails et vous envoyons le proforma par WhatsApp.</p>
           <div class="quote-banner-actions">
-            <button class="btn btn-white btn-lg" id="open-quote">Créer mon devis <span aria-hidden="true">→</span></button>
+            <button class="btn btn-primary btn-lg" id="open-quote">Créer mon devis <span aria-hidden="true">→</span></button>
             <a class="link-light" href="https://wa.me/2266879710?text=Bonjour%20HaiBer%2C%20j%27ai%20besoin%20d%27un%20devis%20personnalis%C3%A9." target="_blank" rel="noopener">Parler à un conseiller</a>
           </div>
         </div>
@@ -393,10 +412,10 @@
           <div class="why-item reveal"><span class="why-icon">💬</span><h3>WhatsApp direct</h3><p>Une question ? Une réponse rapide, sans formulaire interminable.</p></div>
         </div>
         <div class="stats-bar reveal">
-          <div><b>5</b><span>ateliers spécialisés</span></div>
-          <div><b>24 h</b><span>pour un devis</span></div>
-          <div><b>100 %</b><span>sur mesure</span></div>
-          <div><b>9</b><span>visuels de référence</span></div>
+          <div><b data-count="5">5</b><span>ateliers spécialisés</span></div>
+          <div><b data-count="24" data-suffix=" h">24 h</b><span>pour un devis</span></div>
+          <div><b data-count="100" data-suffix=" %">100 %</b><span>sur mesure</span></div>
+          <div><b data-count="9">9</b><span>visuels de référence</span></div>
         </div>
       </div>
     </section>
@@ -544,6 +563,15 @@
     <button class="lightbox-nav next" id="lightbox-next" aria-label="Image suivante">›</button>
   </div>
 
+  <!-- DOCK FLOTTANT HAI BER -->
+  <nav class="quick-dock" aria-label="Accès rapide HaiBer">
+    <span class="dock-brand" aria-hidden="true">HB</span>
+    <a class="dock-btn dock-wa" href="https://wa.me/2266879710?text=Bonjour%20HaiBer%2C%20je%20souhaite%20un%20devis." target="_blank" rel="noopener" data-tip="WhatsApp"><span aria-hidden="true">💬</span><span class="sr-only">Discuter sur WhatsApp</span></a>
+    <a class="dock-btn" href="tel:+22606879710" data-tip="Appeler"><span aria-hidden="true">📞</span><span class="sr-only">Appeler HaiBer</span></a>
+    <button class="dock-btn" id="dock-quote" data-tip="Devis"><span aria-hidden="true">✦</span><span class="sr-only">Créer un devis</span></button>
+    <button class="dock-btn" id="dock-cart" data-tip="Panier"><span aria-hidden="true">🛍️</span><span class="sr-only">Ouvrir le panier</span></button>
+  </nav>
+
   <!-- BOUTON WHATSAPP FLOTTANT -->
   <a class="whatsapp-fab" href="https://wa.me/2266879710?text=Bonjour%20HaiBer%2C%20je%20souhaite%20un%20devis." target="_blank" rel="noopener" aria-label="Discuter sur WhatsApp">
     <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20.5 11.6a8.5 8.5 0 0 1-12.6 7.4L3.5 20l1.1-4.3A8.5 8.5 0 1 1 20.5 11.6Z"></path><path class="wa-mark" d="M9 8.4c.2-.5.4-.5.7-.5h.5c.2 0 .5 0 .7.5l.6 1.4c.1.2 0 .4-.1.6l-.4.5c.2.4.5.8.9 1.2.4.4.8.7 1.2.9l.5-.4c.2-.1.4-.2.6-.1l1.4.6c.4.2.5.4.5.7v.5c0 .4-.3.7-.6.8-.3.1-.7.2-1.1.1-2.3-.6-4.1-2.4-4.7-4.7-.1-.4 0-.8.1-1.1.1-.3.4-.5.8-.6Z"></path></svg>
@@ -552,6 +580,6 @@
 
   <div class="toast" id="toast" role="status" aria-live="polite"></div>
 
-  <script src="js/site.js?v=2"></script>
+  <script src="js/site.js?v=3"></script>
 </body>
 </html>
