@@ -1,5 +1,3 @@
 User-agent: *
 Allow: /
-
-# Remplacez par votre domaine lors de la mise en ligne :
-# Sitemap: https://haiber.bf/sitemap.xml
+Sitemap: https://haibermultiservices564-gif.github.io/haiber-site/sitemap.xml
