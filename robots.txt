@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+
+# Remplacez par votre domaine lors de la mise en ligne :
+# Sitemap: https://haiber.bf/sitemap.xml

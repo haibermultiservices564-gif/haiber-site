@@ -1,0 +1,14 @@
+{
+  "name": "HaiBer Multi-Services",
+  "short_name": "HaiBer",
+  "description": "Votre communication, notre mission ! Conception, packaging, impression, branding véhicule, objets publicitaires et résine à Cissin, Ouagadougou.",
+  "start_url": "./index.html",
+  "display": "standalone",
+  "background_color": "#fbfaf7",
+  "theme_color": "#3a4f9e",
+  "lang": "fr",
+  "icons": [
+    { "src": "assets/logo.png", "sizes": "192x192", "type": "image/png", "purpose": "any maskable" },
+    { "src": "assets/logo.png", "sizes": "512x512", "type": "image/png", "purpose": "any maskable" }
+  ]
+}
