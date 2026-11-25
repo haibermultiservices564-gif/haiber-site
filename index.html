@@ -15,7 +15,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="css/styles.css?v=5">
+  <link rel="stylesheet" href="css/styles.css?v=9">
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -38,6 +38,16 @@
   </script>
 </head>
 <body>
+  <!-- Décor HaiBer permanent : composité GPU, aucun recalcul de mise en page -->
+  <div class="hb-art" aria-hidden="true">
+    <span class="hb-orb hb-orb-a"></span>
+    <span class="hb-orb hb-orb-b"></span>
+    <span class="hb-orb hb-orb-c"></span>
+    <span class="hb-ring hb-ring-a"></span>
+    <span class="hb-ring hb-ring-b"></span>
+    <span class="hb-dots"></span>
+  </div>
+
   <!-- Bandeau d'information -->
   <div class="announce">
     <div class="container announce-inner">
@@ -589,6 +599,11 @@
     <div class="drawer-foot">
       <div class="cart-total"><span>Total estimé</span><b id="cart-total">0 F</b></div>
       <p class="cart-hint">Les prix indiqués sont des estimations. Le total final est confirmé sur le devis.</p>
+      <div class="cart-contact">
+        <label>Votre nom<input id="cart-name" autocomplete="name" placeholder="Prénom et nom"></label>
+        <label>Téléphone<input id="cart-phone" type="tel" autocomplete="tel" placeholder="+226 …"></label>
+        <label>E-mail (facultatif)<input id="cart-email" type="email" autocomplete="email" placeholder="vous@exemple.com"></label>
+      </div>
       <button class="btn btn-primary btn-block" id="cart-quote">Demander un devis avec ces articles</button>
       <button class="btn btn-outline btn-block" id="cart-whatsapp">Envoyer sur WhatsApp</button>
     </div>
@@ -622,6 +637,6 @@
 
   <div class="toast" id="toast" role="status" aria-live="polite"></div>
 
-  <script src="js/site.js?v=5"></script>
+  <script src="js/site.js?v=9"></script>
 </body>
 </html>
