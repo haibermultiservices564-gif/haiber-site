@@ -7,6 +7,7 @@
 
   const WHATSAPP = 'https://wa.me/22606879710';
   const CART_KEY = 'haiber_site_cart_v1';
+  const SITE_ORDER_KEY = 'haiber_site_orders_v1';
 
   const esc = (s) => String(s == null ? '' : s)
     .replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;')
@@ -15,6 +16,10 @@
   const money = (n) => new Intl.NumberFormat('fr-FR').format(Math.round(n || 0));
   const priceLabel = (p) => p == null ? 'Sur devis' : money(p) + ' F';
   const normalize = (s) => String(s || '').toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g, '');
+  const imgSrc = (src) => {
+    const s = String(src || '');
+    return esc(s + (s.includes('?') ? '&v=9' : '?v=9'));
+  };
 
   /* ---------------- Données boutique ---------------- */
   const G = 'assets/galerie/';
@@ -509,6 +514,7 @@
   let cart = loadCart();
   let lightboxIndex = 0;
   let quote = freshQuote();
+  let cardObserver = null;
 
   function freshQuote() {
     return { step: 0, atelier: null, prestation: '', qty: 1, extras: [], express: false, notes: '', name: '', phone: '', email: '' };
@@ -539,6 +545,41 @@
     window.open(WHATSAPP + '?text=' + encodeURIComponent(message), '_blank', 'noopener');
   }
 
+  /* Transmet la commande à l’application HaiBer Gestion (même origine GitHub Pages). */
+  function pushSiteOrder(order) {
+    const stamp = new Date();
+    const ref = 'HBW-' + stamp.toISOString().slice(2, 10).replace(/-/g, '') + '-' + Math.random().toString(36).slice(2, 6).toUpperCase();
+    const item = Object.assign({
+      id: 'WEB-' + stamp.getTime() + '-' + Math.random().toString(36).slice(2, 6).toUpperCase(),
+      ref, at: stamp.toISOString(), source: 'Site web', type: 'Commande du site', seen: false
+    }, order, { ref: order.ref || ref });
+    let list = [];
+    try {
+      const raw = JSON.parse(localStorage.getItem(SITE_ORDER_KEY) || '[]');
+      if (Array.isArray(raw)) list = raw;
+    } catch (e) { /* stockage indisponible */ }
+    list.unshift(item);
+    try { localStorage.setItem(SITE_ORDER_KEY, JSON.stringify(list.slice(0, 100))); } catch (e) { /* stockage indisponible */ }
+    return item;
+  }
+
+  function patchSiteOrder(id, patch) {
+    let list = [];
+    try {
+      const raw = JSON.parse(localStorage.getItem(SITE_ORDER_KEY) || '[]');
+      if (Array.isArray(raw)) list = raw;
+    } catch (e) { return; }
+    const item = list.find(o => o.id === id);
+    if (!item) return;
+    Object.assign(item, patch);
+    try { localStorage.setItem(SITE_ORDER_KEY, JSON.stringify(list)); } catch (e) { /* stockage indisponible */ }
+  }
+
+  function cartClient() {
+    const get = (id) => { const el = $(id); return el ? el.value.trim() : ''; };
+    return { name: get('#cart-name'), phone: get('#cart-phone'), email: get('#cart-email') };
+  }
+
   function animateCounters(scope) {
     if (!scope) return;
     const targets = $$('[data-count]', scope);
@@ -564,6 +605,25 @@
   }
 
   function productById(id) { return PRODUCTS.find(p => p.id === id); }
+
+  /* Seules les cartes visibles respirent : mouvement permanent, coût maîtrisé. */
+  function observeCards() {
+    const cards = $$('.product-card, .promo-card, .category-card, .service-card, .why-item, .testimonial-card');
+    if (!('IntersectionObserver' in window)) {
+      cards.forEach(el => el.classList.add('is-live'));
+      return;
+    }
+    if (!cardObserver) {
+      cardObserver = new IntersectionObserver(entries => {
+        entries.forEach(en => en.target.classList.toggle('is-live', en.isIntersecting));
+      }, { rootMargin: '140px 0px' });
+    }
+    cards.forEach(el => {
+      if (el.dataset.cardObserved) return;
+      el.dataset.cardObserved = '1';
+      cardObserver.observe(el);
+    });
+  }
 
   /* ---------------- Boutique ---------------- */
   function renderFilters() {
@@ -593,7 +653,7 @@
     $('#product-grid').innerHTML = list.map(p => `
       <article class="product-card">
         <div class="product-media">
-          <img src="${esc(p.img)}" alt="${esc(p.name)}" loading="lazy">
+          <img src="${imgSrc(p.img)}" alt="${esc(p.name)}" loading="lazy">
           ${p.badge ? `<span class="product-badge${p.badge === 'Premium' || p.badge === 'Coup de cœur' ? ' pink' : p.badge === 'Nouveau' ? ' orange' : ''}">${esc(p.badge)}</span>` : ''}
         </div>
         <div class="product-body">
@@ -619,6 +679,7 @@
       openQuote(atelier, p.name);
     });
     $$('[data-detail-product]').forEach(b => b.onclick = () => openProductDetail(b.dataset.detailProduct));
+    observeCards();
   }
 
   function openProductDetail(id) {
@@ -631,7 +692,7 @@
     $('#modal-root').innerHTML = `
       <div class="product-detail">
         <button class="detail-close" id="detail-close" aria-label="Fermer">✕</button>
-        <div class="detail-media"><img src="${esc(p.img)}" alt="${esc(p.name)}"></div>
+        <div class="detail-media"><img src="${imgSrc(p.img)}" alt="${esc(p.name)}"></div>
         <div class="detail-copy">
           <div class="section-tag">${esc(p.cat)}</div>
           <h2>${esc(p.name)}</h2>
@@ -723,7 +784,7 @@
       if (!p) return '';
       const total = p.price == null ? 'Sur devis' : money(p.price * x.qty) + ' F';
       return `<div class="cart-line">
-        <img src="${esc(p.img)}" alt="">
+        <img src="${imgSrc(p.img)}" alt="">
         <div class="cart-line-info"><b>${esc(p.name)}</b><small>${esc(p.cat)} · ${esc(priceLabel(p.price))}</small>
           <div class="qty-control"><button data-dec="${esc(p.id)}" aria-label="Diminuer">−</button><b>${x.qty}</b><button data-inc="${esc(p.id)}" aria-label="Augmenter">+</button></div>
         </div>
@@ -758,12 +819,24 @@
     if ($('#modal-root').hidden) document.body.classList.remove('no-scroll');
   }
 
-  function cartMessage() {
+  function cartMessage(ref, client) {
     const rows = cart.map(x => {
       const p = productById(x.id);
       return p ? `• ${p.name} × ${x.qty} — ${priceLabel(p.price)}` : '';
     }).filter(Boolean);
-    return `Bonjour HaiBer, voici ma sélection :\n\n${rows.join('\n')}\n\nTotal estimé : ${$('#cart-total').textContent}\nMerci de me préparer un devis.`;
+    const c = client || cartClient();
+    return [
+      'Bonjour HaiBer, voici ma sélection :',
+      '',
+      ...rows,
+      '',
+      'Total estimé : ' + $('#cart-total').textContent,
+      ref ? 'Référence : ' + ref : '',
+      c.name ? 'Nom : ' + c.name : '',
+      c.phone ? 'Téléphone : ' + c.phone : '',
+      c.email ? 'E-mail : ' + c.email : '',
+      'Merci de me préparer un devis.'
+    ].filter(Boolean).join('\n');
   }
 
   /* ---------------- Devis en ligne ---------------- */
@@ -908,9 +981,28 @@
           'Téléphone : ' + quote.phone,
           quote.email ? 'E-mail : ' + quote.email : ''
         ].filter(Boolean).join('\n');
+        const pushed = pushSiteOrder({
+          type: 'Demande de devis — ' + quote.atelier,
+          client: { name: quote.name, phone: quote.phone, email: quote.email },
+          items: [{
+            name: opt2.label, cat: quote.atelier, qty: quote.qty,
+            unitPrice: opt2.price, lineTotal: opt2.price * quote.qty
+          }],
+          total: estimate(),
+          details: [
+            ['Atelier', quote.atelier],
+            ['Prestation', opt2.label + ' × ' + quote.qty],
+            ['Options', quote.extras.length ? quote.extras.join(', ') : 'Aucune'],
+            ['Express', quote.express ? 'Oui (+25 %)' : 'Non'],
+            ['Précisions', quote.notes || 'Aucune']
+          ],
+          message: msg
+        });
+        const finalMsg = 'Référence : ' + pushed.ref + '\n' + msg;
+        patchSiteOrder(pushed.id, { message: finalMsg });
         closeQuote();
-        openWa(msg);
-        toast('Votre devis est prêt dans WhatsApp');
+        openWa(finalMsg);
+        toast('Demande transmise à HaiBer Gestion et prête dans WhatsApp');
       };
     }
   }
@@ -966,6 +1058,7 @@
     renderGrandFormat();
     renderCart();
     renderGallery();
+    observeCards();
 
     // Recherche
     $('#site-search').addEventListener('input', (e) => { searchTerm = e.target.value; renderProducts(); });
@@ -994,6 +1087,7 @@
         const p = productById(cart[0].id);
         atelier = (p && SERVICE_MAP[p.cat]) || 'Accompagnement';
       }
+      const client = cartClient();
       closeCart();
       openQuote(atelier);
       const notes = $$('.quote-form textarea')[0];
@@ -1002,8 +1096,31 @@
         return p ? p.name + ' × ' + x.qty : '';
       }).filter(Boolean).join(', ');
       quote.notes = notes ? notes.value : '';
+      quote.name = client.name;
+      quote.phone = client.phone;
+      quote.email = client.email;
     };
-    $('#cart-whatsapp').onclick = () => { openWa(cartMessage()); toast('Sélection envoyée dans WhatsApp'); };
+    $('#cart-whatsapp').onclick = () => {
+      if (!cart.length) { toast('Votre panier est vide'); return; }
+      const client = cartClient();
+      if (!client.name || !client.phone) {
+        toast('Indiquez votre nom et votre téléphone dans le panier');
+        const target = !client.name ? $('#cart-name') : $('#cart-phone');
+        if (target) target.focus();
+        return;
+      }
+      const items = cart.map(x => {
+        const p = productById(x.id);
+        return p ? { name: p.name, cat: p.cat, qty: x.qty, unitPrice: p.price, lineTotal: p.price == null ? 0 : p.price * x.qty } : null;
+      }).filter(Boolean);
+      const total = items.reduce((a, i) => a + i.lineTotal, 0);
+      const sent = pushSiteOrder({ type: 'Commande du site', client, items, total });
+      const message = cartMessage(sent.ref, client);
+      patchSiteOrder(sent.id, { message });
+      openWa(message);
+      closeCart();
+      toast('Commande transmise à HaiBer Gestion et prête dans WhatsApp');
+    };
 
     // Devis
     $('#hero-quote').onclick = () => openQuote();
