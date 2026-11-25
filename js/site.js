@@ -5,7 +5,7 @@
 (function () {
   'use strict';
 
-  const WHATSAPP = 'https://wa.me/2266879710';
+  const WHATSAPP = 'https://wa.me/22606879710';
   const CART_KEY = 'haiber_site_cart_v1';
 
   const esc = (s) => String(s == null ? '' : s)
