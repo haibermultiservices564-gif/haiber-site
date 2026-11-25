@@ -1,0 +1,1147 @@
+{
+  "meta": {
+    "title": "Catalogue HaiBer Multi-Services",
+    "version": "2026.1",
+    "source": "Catalogue HB VERSION FINAL.pdf",
+    "description": "Conception, impression, packaging, sérigraphie, marquage objet et résine.",
+    "site": "https://haibermultiservices564-gif.github.io/haiber-site/",
+    "contact": {
+      "phone": "+226 06 87 97 10",
+      "phone2": "+226 60 28 31 31",
+      "whatsapp": "https://wa.me/2266879710",
+      "email": "haibermultiservices@gmail.com",
+      "address": "Cissin, non loin de la boulangerie Wend-Konta, Ouagadougou, Burkina Faso",
+      "tagline": "Votre communication, notre mission !"
+    }
+  },
+  "categories": [
+    {
+      "name": "Imprimerie & Édition",
+      "label": "Imprimerie & Édition",
+      "description": "La précision du papier, la force de l'encre : du petit au très grand format."
+    },
+    {
+      "name": "Sérigraphie & marquage",
+      "label": "Sérigraphie & marquage",
+      "description": "Marquez les esprits avec des supports durables et des couleurs vibrantes."
+    },
+    {
+      "name": "Résine & objets",
+      "label": "Résine & objets",
+      "description": "Création d'objets et personnalisation à base de résine."
+    }
+  ],
+  "packs": [
+    {
+      "id": "pack-entreprise",
+      "name": "PACK ENTREPRISE",
+      "price": 75500,
+      "subtitle": "Laissez-nous créer votre identité !",
+      "items": [
+        "Création de logo professionnel",
+        "Conception d'une entête",
+        "100 cartes de visite",
+        "100 flyers",
+        "10 carnets de factures"
+      ]
+    },
+    {
+      "id": "pack-gadgets",
+      "name": "PACK GADGETS",
+      "price": 150000,
+      "subtitle": "Renforcez vos liens avec vos clients.",
+      "items": [
+        "20 t-shirts personnalisés",
+        "20 casquettes",
+        "10 tasses entreprise",
+        "10 porte-clés",
+        "10 stylos personnalisés"
+      ]
+    },
+    {
+      "id": "pack-cadeau",
+      "name": "PACK CADEAU / CALENDAR",
+      "price": 157500,
+      "subtitle": "Un cadeau mémorable pour vos clients.",
+      "items": [
+        "50 calendriers muraux",
+        "20 calendriers de table",
+        "100 cartes de vœux",
+        "10 blocs-notes",
+        "10 tasses entreprise"
+      ]
+    },
+    {
+      "id": "pack-premium",
+      "name": "PACK PREMIUM",
+      "price": 165000,
+      "subtitle": "La formule complète pour votre marque.",
+      "items": [
+        "50 calendriers muraux",
+        "50 calendriers de table",
+        "50 cartes de vœux",
+        "20 blocs-notes",
+        "20 tasses",
+        "20 t-shirts",
+        "20 casquettes",
+        "10 porte-clés"
+      ]
+    }
+  ],
+  "products": [
+    {
+      "id": "carte-de-visite",
+      "name": "Carte de visite",
+      "cat": "Imprimerie & Édition",
+      "price": 15000,
+      "unit": "lot de 500",
+      "desc": "Cartes de visite professionnelles, recto ou recto-verso, avec finitions luxe au choix.",
+      "details": {
+        "Format": "90 × 54 mm",
+        "Grammage": "350 g",
+        "Quantité": "500 pièces",
+        "Autres": "Coins arrondis, vernis 3D ou pelliculage mat"
+      },
+      "badge": "Populaire",
+      "img": "assets/catalogue/carte-de-visite.jpg",
+      "source": "Catalogue HaiBer Multi-Services — page 4"
+    },
+    {
+      "id": "carte-scolaire",
+      "name": "Carte scolaire",
+      "cat": "Imprimerie & Édition",
+      "price": 12000,
+      "unit": "lot de 200",
+      "desc": "Carte scolaire plastifiée avec photo, nom et logo de l'établissement.",
+      "details": {
+        "Format": "90 × 54 mm",
+        "Grammage": "300 g + plastification",
+        "Quantité": "200 pièces",
+        "Autres": "Recto-verso, code QR possible"
+      },
+      "badge": null,
+      "img": "assets/catalogue/carte-scolaire.jpg",
+      "source": "Catalogue HaiBer Multi-Services — page 4"
+    },
+    {
+      "id": "carte-de-voeux",
+      "name": "Carte de vœux",
+      "cat": "Imprimerie & Édition",
+      "price": 18000,
+      "unit": "lot de 100",
+      "desc": "Carte de vœux personnalisée pour souhaiter une bonne année à vos clients et partenaires.",
+      "details": {
+        "Format": "105 × 148 mm",
+        "Grammage": "300 g",
+        "Quantité": "100 pièces",
+        "Autres": "Pliée, enveloppe assortie incluse"
+      },
+      "badge": null,
+      "img": "assets/catalogue/carte-de-voeux.jpg",
+      "source": "Catalogue HaiBer Multi-Services — page 4"
+    },
+    {
+      "id": "carte-d-invitation",
+      "name": "Carte d'invitation",
+      "cat": "Imprimerie & Édition",
+      "price": 20000,
+      "unit": "lot de 100",
+      "desc": "Invitation élégante pour mariages, événements et cérémonies d'entreprise.",
+      "details": {
+        "Format": "105 × 148 mm",
+        "Grammage": "350 g",
+        "Quantité": "100 pièces",
+        "Autres": "Personnalisation complète, dorure possible"
+      },
+      "badge": null,
+      "img": "assets/catalogue/carte-d-invitation.jpg",
+      "source": "Catalogue HaiBer Multi-Services — page 4"
+    },
+    {
+      "id": "depliant",
+      "name": "Dépliant",
+      "cat": "Imprimerie & Édition",
+      "price": 25000,
+      "unit": "lot de 500",
+      "desc": "Dépliant pour présenter vos activités, vos produits ou votre programme.",
+      "details": {
+        "Format": "A4 plié",
+        "Grammage": "135 g",
+        "Quantité": "500 pièces",
+        "Autres": "Pli simple, roulé ou accordéon"
+      },
+      "badge": null,
+      "img": "assets/catalogue/depliant.jpg",
+      "source": "Catalogue HaiBer Multi-Services — page 4"
+    },
+    {
+      "id": "flyers",
+      "name": "Flyers",
+      "cat": "Imprimerie & Édition",
+      "price": 18000,
+      "unit": "lot de 500",
+      "desc": "Flyers promotionnels haute définition, du 135 g au 350 g.",
+      "details": {
+        "Format": "A5 (148 × 210 mm)",
+        "Grammage": "135 à 350 g",
+        "Quantité": "500 pièces",
+        "Autres": "Recto ou recto-verso"
+      },
+      "badge": "Populaire",
+      "img": "assets/catalogue/flyers.jpg",
+      "source": "Catalogue HaiBer Multi-Services — page 4"
+    },
+    {
+      "id": "depliant-promotionnel",
+      "name": "Dépliant promotionnel",
+      "cat": "Imprimerie & Édition",
+      "price": 26000,
+      "unit": "lot de 500",
+      "desc": "Dépliant grand tirage pour vos campagnes de communication et salons.",
+      "details": {
+        "Format": "A4 / A5",
+        "Grammage": "135 g",
+        "Quantité": "500 pièces",
+        "Autres": "Pli roulé ou accordéon, vernis mat"
+      },
+      "badge": null,
+      "img": "assets/catalogue/depliant-promotionnel.jpg",
+      "source": "Catalogue HaiBer Multi-Services — page 5"
+    },
+    {
+      "id": "bloc-note",
+      "name": "Bloc note",
+      "cat": "Imprimerie & Édition",
+      "price": 14900,
+      "unit": "pièce",
+      "desc": "Bloc note personnalisé aux couleurs de votre marque, avec calendrier et images.",
+      "details": {
+        "Format": "A5 (21 × 14,8 cm)",
+        "Grammage": "90 g + dos cartonné",
+        "Quantité": "1 pièce",
+        "Autres": "50 feuillets, spirale ou agrafé"
+      },
+      "badge": "Nouveau",
+      "img": "assets/catalogue/bloc-note.jpg",
+      "source": "Catalogue HaiBer Multi-Services — page 5"
+    },
+    {
+      "id": "calendrier-de-poche",
+      "name": "Calendrier de poche",
+      "cat": "Imprimerie & Édition",
+      "price": 9000,
+      "unit": "lot de 200",
+      "desc": "Calendrier de poche pratique à glisser dans un portefeuille ou un sac.",
+      "details": {
+        "Format": "90 × 150 mm",
+        "Grammage": "350 g",
+        "Quantité": "200 pièces",
+        "Autres": "12 mois, agrafé, logo en couverture"
+      },
+      "badge": null,
+      "img": "assets/catalogue/calendrier-de-poche.jpg",
+      "source": "Catalogue HaiBer Multi-Services — page 5"
+    },
+    {
+      "id": "cv",
+      "name": "CV professionnel",
+      "cat": "Imprimerie & Édition",
+      "price": 5000,
+      "unit": "lot de 100",
+      "desc": "CV mis en page et imprimé avec soin pour vos candidatures et recrutements.",
+      "details": {
+        "Format": "A4",
+        "Grammage": "120 g",
+        "Quantité": "100 pièces",
+        "Autres": "Recto, finition nette"
+      },
+      "badge": null,
+      "img": "assets/catalogue/cv.jpg",
+      "source": "Catalogue HaiBer Multi-Services — page 5"
+    },
+    {
+      "id": "entete",
+      "name": "Entête personnalisée",
+      "cat": "Imprimerie & Édition",
+      "price": 12000,
+      "unit": "lot de 500",
+      "desc": "Papier à entête avec logo et coordonnées de votre structure.",
+      "details": {
+        "Format": "A4",
+        "Grammage": "100 g",
+        "Quantité": "500 pièces",
+        "Autres": "Logo, adresse, téléphone et e-mail"
+      },
+      "badge": null,
+      "img": "assets/catalogue/entete.jpg",
+      "source": "Catalogue HaiBer Multi-Services — page 5"
+    },
+    {
+      "id": "ticket-evenement",
+      "name": "Ticket événement",
+      "cat": "Imprimerie & Édition",
+      "price": 14000,
+      "unit": "lot de 1000",
+      "desc": "Tickets numérotés pour concerts, conférences, tombolas et entrées payantes.",
+      "details": {
+        "Format": "150 × 70 mm",
+        "Grammage": "90 g",
+        "Quantité": "1000 pièces",
+        "Autres": "Numérotation et perforation"
+      },
+      "badge": null,
+      "img": "assets/catalogue/ticket-evenement.jpg",
+      "source": "Catalogue HaiBer Multi-Services — page 5"
+    },
+    {
+      "id": "etiquettes",
+      "name": "Étiquettes",
+      "cat": "Imprimerie & Édition",
+      "price": 8000,
+      "unit": "lot de 500",
+      "desc": "Étiquettes adhésives pour identifier vos produits, prix ou colis.",
+      "details": {
+        "Format": "Sur mesure",
+        "Grammage": "Papier autocollant",
+        "Quantité": "500 pièces",
+        "Autres": "Rouleau ou planche, découpe contour"
+      },
+      "badge": null,
+      "img": "assets/catalogue/etiquettes.jpg",
+      "source": "Catalogue HaiBer Multi-Services — page 5"
+    },
+    {
+      "id": "menu",
+      "name": "Menu",
+      "cat": "Imprimerie & Édition",
+      "price": 16000,
+      "unit": "lot de 200",
+      "desc": "Menu de restaurant ou de café, conçu et imprimé aux couleurs de votre établissement.",
+      "details": {
+        "Format": "A4 / A5",
+        "Grammage": "250 g",
+        "Quantité": "200 pièces",
+        "Autres": "Plié, pelliculage mat possible"
+      },
+      "badge": null,
+      "img": "assets/catalogue/menu.jpg",
+      "source": "Catalogue HaiBer Multi-Services — page 5"
+    },
+    {
+      "id": "calendrier-mural",
+      "name": "Calendrier mural",
+      "cat": "Imprimerie & Édition",
+      "price": 35000,
+      "unit": "lot de 50",
+      "desc": "Grand calendrier mural pour vos bureaux, ateliers et points de vente.",
+      "details": {
+        "Format": "420 × 590 mm",
+        "Grammage": "350 g",
+        "Quantité": "50 pièces",
+        "Autres": "12 mois, bandeau personnalisé"
+      },
+      "badge": "Coup de cœur",
+      "img": "assets/catalogue/calendrier-mural.jpg",
+      "source": "Catalogue HaiBer Multi-Services — page 5"
+    },
+    {
+      "id": "calendrier-de-table",
+      "name": "Calendrier de table",
+      "cat": "Imprimerie & Édition",
+      "price": 18000,
+      "unit": "lot de 100",
+      "desc": "Calendrier de bureau avec chevalet, idéal pour vos clients et collaborateurs.",
+      "details": {
+        "Format": "200 × 250 mm",
+        "Grammage": "350 g",
+        "Quantité": "100 pièces",
+        "Autres": "Chevalet inclus, dos imprimé"
+      },
+      "badge": null,
+      "img": "assets/catalogue/calendrier-de-table.jpg",
+      "source": "Catalogue HaiBer Multi-Services — page 5"
+    },
+    {
+      "id": "attestation",
+      "name": "Attestation",
+      "cat": "Imprimerie & Édition",
+      "price": 10000,
+      "unit": "lot de 50",
+      "desc": "Attestations et certificats nominatifs pour vos formations et événements.",
+      "details": {
+        "Format": "A4",
+        "Grammage": "250 g",
+        "Quantité": "50 pièces",
+        "Autres": "Personnalisation des noms et dates"
+      },
+      "badge": null,
+      "img": "assets/catalogue/attestation.jpg",
+      "source": "Catalogue HaiBer Multi-Services — page 5"
+    },
+    {
+      "id": "facturier",
+      "name": "Facturier",
+      "cat": "Imprimerie & Édition",
+      "price": 15000,
+      "unit": "lot de 10 carnets",
+      "desc": "Carnets de factures numérotés pour la gestion quotidienne de votre activité.",
+      "details": {
+        "Format": "A4",
+        "Grammage": "80 g",
+        "Quantité": "10 carnets",
+        "Autres": "50 feuillets par carnet, triplicate"
+      },
+      "badge": null,
+      "img": "assets/catalogue/facturier.jpg",
+      "source": "Catalogue HaiBer Multi-Services — page 5"
+    },
+    {
+      "id": "brochure",
+      "name": "Brochure",
+      "cat": "Imprimerie & Édition",
+      "price": 30000,
+      "unit": "lot de 500",
+      "desc": "Brochure commerciale soignée, piquée ou dos carré collé.",
+      "details": {
+        "Format": "A5 / A4",
+        "Grammage": "135 g",
+        "Quantité": "500 pièces",
+        "Autres": "Dos carré collé ou agrafé"
+      },
+      "badge": null,
+      "img": "assets/catalogue/brochure.jpg",
+      "source": "Catalogue HaiBer Multi-Services — page 6"
+    },
+    {
+      "id": "kakemono",
+      "name": "Kakemono",
+      "cat": "Imprimerie & Édition",
+      "price": 45000,
+      "unit": "pièce",
+      "desc": "Kakemono pour vos salons, conférences et points de vente.",
+      "details": {
+        "Format": "600 × 1600 mm",
+        "Grammage": "Vinyle 440 g",
+        "Quantité": "1 pièce",
+        "Autres": "Supports et housse de transport inclus"
+      },
+      "badge": null,
+      "img": "assets/catalogue/kakemono.jpg",
+      "source": "Catalogue HaiBer Multi-Services — page 6"
+    },
+    {
+      "id": "derouleur",
+      "name": "Dérouleur",
+      "cat": "Imprimerie & Édition",
+      "price": 55000,
+      "unit": "pièce",
+      "desc": "Dérouleur rétractable pour une installation rapide sur événement.",
+      "details": {
+        "Format": "850 × 2000 mm",
+        "Grammage": "Vinyle 440 g",
+        "Quantité": "1 pièce",
+        "Autres": "Cassette aluminium et housse incluses"
+      },
+      "badge": null,
+      "img": "assets/catalogue/derouleur.jpg",
+      "source": "Catalogue HaiBer Multi-Services — page 6"
+    },
+    {
+      "id": "cadre-photo",
+      "name": "Cadre photo",
+      "cat": "Imprimerie & Édition",
+      "price": 12000,
+      "unit": "pièce",
+      "desc": "Cadre photo personnalisé avec impression sur aluminium ou PVC rigide.",
+      "details": {
+        "Format": "200 × 300 mm",
+        "Grammage": "Alu / PVC",
+        "Quantité": "1 pièce",
+        "Autres": "Impression haute définition"
+      },
+      "badge": null,
+      "img": "assets/catalogue/cadre-photo.jpg",
+      "source": "Catalogue HaiBer Multi-Services — page 6"
+    },
+    {
+      "id": "catalogue",
+      "name": "Catalogue",
+      "cat": "Imprimerie & Édition",
+      "price": 45000,
+      "unit": "lot de 200",
+      "desc": "Catalogue produit complet, conçu et imprimé pour valoriser votre offre.",
+      "details": {
+        "Format": "A4",
+        "Grammage": "135 g",
+        "Quantité": "200 pièces",
+        "Autres": "Dos carré collé, couverture 350 g"
+      },
+      "badge": null,
+      "img": "assets/catalogue/catalogue.jpg",
+      "source": "Catalogue HaiBer Multi-Services — page 6"
+    },
+    {
+      "id": "annales",
+      "name": "Annales",
+      "cat": "Imprimerie & Édition",
+      "price": 28000,
+      "unit": "lot de 100",
+      "desc": "Annales et recueils de documents pour les établissements scolaires.",
+      "details": {
+        "Format": "A4",
+        "Grammage": "90 g",
+        "Quantité": "100 pièces",
+        "Autres": "Relié, couverture renforcée"
+      },
+      "badge": null,
+      "img": "assets/catalogue/annales.jpg",
+      "source": "Catalogue HaiBer Multi-Services — page 6"
+    },
+    {
+      "id": "thermos",
+      "name": "Thermos",
+      "cat": "Sérigraphie & marquage",
+      "price": 12000,
+      "unit": "pièce · min. 10",
+      "desc": "Thermos isotherme personnalisé, cadeau utile et durable.",
+      "details": {
+        "Format": "500 ml",
+        "Grammage": "Inox",
+        "Quantité": "10 pièces",
+        "Autres": "Gravure laser ou sérigraphie"
+      },
+      "badge": null,
+      "img": "assets/catalogue/thermos.jpg",
+      "source": "Catalogue HaiBer Multi-Services — page 6"
+    },
+    {
+      "id": "usb-personnalisee",
+      "name": "USB personnalisée",
+      "cat": "Sérigraphie & marquage",
+      "price": 6500,
+      "unit": "pièce · min. 20",
+      "desc": "Clé USB personnalisée pour vos supports de formation et cadeaux.",
+      "details": {
+        "Format": "8 Go",
+        "Grammage": "Métal / plastique",
+        "Quantité": "20 pièces",
+        "Autres": "Gravure laser de votre logo"
+      },
+      "badge": null,
+      "img": "assets/catalogue/usb-personnalisee.jpg",
+      "source": "Catalogue HaiBer Multi-Services — page 6"
+    },
+    {
+      "id": "badge",
+      "name": "Badge",
+      "cat": "Sérigraphie & marquage",
+      "price": 4000,
+      "unit": "lot de 100",
+      "desc": "Badges personnalisés pour événements, équipes et cadeaux.",
+      "details": {
+        "Format": "37 mm",
+        "Grammage": "Métal émaillé",
+        "Quantité": "100 pièces",
+        "Autres": "Épingle, impression couleur"
+      },
+      "badge": null,
+      "img": "assets/catalogue/badge.jpg",
+      "source": "Catalogue HaiBer Multi-Services — page 6"
+    },
+    {
+      "id": "bache",
+      "name": "Bâche",
+      "cat": "Imprimerie & Édition",
+      "price": 2500,
+      "unit": "m²",
+      "desc": "Bâche PVC haute résistance pour enseignes, événements et chantiers.",
+      "details": {
+        "Format": "Sur mesure",
+        "Grammage": "PVC 440 g",
+        "Quantité": "1 m²",
+        "Autres": "Œillets, ourlage et impression couleur"
+      },
+      "badge": "Best-seller",
+      "img": "assets/catalogue/bache.jpg",
+      "source": "Catalogue HaiBer Multi-Services — page 6"
+    },
+    {
+      "id": "vinyl",
+      "name": "Vinyle",
+      "cat": "Imprimerie & Édition",
+      "price": 3000,
+      "unit": "m²",
+      "desc": "Vinyle adhésif pour vitrines, véhicules, murs et signalétique.",
+      "details": {
+        "Format": "Sur mesure",
+        "Grammage": "Adhésif 80 µm",
+        "Quantité": "1 m²",
+        "Autres": "Pose professionnelle possible"
+      },
+      "badge": null,
+      "img": "assets/catalogue/vinyl.jpg",
+      "source": "Catalogue HaiBer Multi-Services — page 6"
+    },
+    {
+      "id": "livre",
+      "name": "Livre",
+      "cat": "Imprimerie & Édition",
+      "price": 35000,
+      "unit": "lot de 100",
+      "desc": "Livre relié imprimé sur mesure pour vos publications et ouvrages.",
+      "details": {
+        "Format": "A5",
+        "Grammage": "120 g",
+        "Quantité": "100 pièces",
+        "Autres": "Couverture rigide, dos carré collé"
+      },
+      "badge": null,
+      "img": "assets/catalogue/livre.jpg",
+      "source": "Catalogue HaiBer Multi-Services — page 6"
+    },
+    {
+      "id": "couverture-de-livre",
+      "name": "Couverture de livre",
+      "cat": "Imprimerie & Édition",
+      "price": 8000,
+      "unit": "lot de 100",
+      "desc": "Couverture de livre personnalisée avec pelliculage mat ou brillant.",
+      "details": {
+        "Format": "A5",
+        "Grammage": "350 g",
+        "Quantité": "100 pièces",
+        "Autres": "Pelliculage mat ou brillant"
+      },
+      "badge": null,
+      "img": "assets/catalogue/couverture-de-livre.jpg",
+      "source": "Catalogue HaiBer Multi-Services — page 7"
+    },
+    {
+      "id": "magazine",
+      "name": "Magazine",
+      "cat": "Imprimerie & Édition",
+      "price": 38000,
+      "unit": "lot de 500",
+      "desc": "Magazine agrafé avec couverture renforcée pour vos publications.",
+      "details": {
+        "Format": "A4",
+        "Grammage": "135 g",
+        "Quantité": "500 pièces",
+        "Autres": "Agrafé, couverture 250 g"
+      },
+      "badge": null,
+      "img": "assets/catalogue/magazine.jpg",
+      "source": "Catalogue HaiBer Multi-Services — page 7"
+    },
+    {
+      "id": "affiche",
+      "name": "Affiche",
+      "cat": "Imprimerie & Édition",
+      "price": 3000,
+      "unit": "lot de 100",
+      "desc": "Affiches couleur pour votre communication visuelle et vos événements.",
+      "details": {
+        "Format": "A3 / A2",
+        "Grammage": "135 g",
+        "Quantité": "100 pièces",
+        "Autres": "Impression recto haute définition"
+      },
+      "badge": null,
+      "img": "assets/catalogue/affiche.jpg",
+      "source": "Catalogue HaiBer Multi-Services — page 7"
+    },
+    {
+      "id": "micro-perforee",
+      "name": "Micro perforée",
+      "cat": "Imprimerie & Édition",
+      "price": 4000,
+      "unit": "m²",
+      "desc": "Vinyle micro perforé pour vitrines et habillage de véhicules.",
+      "details": {
+        "Format": "Sur mesure",
+        "Grammage": "Vinyle perforé",
+        "Quantité": "1 m²",
+        "Autres": "Visibilité depuis l'intérieur"
+      },
+      "badge": null,
+      "img": "assets/catalogue/micro-perforee.jpg",
+      "source": "Catalogue HaiBer Multi-Services — page 7"
+    },
+    {
+      "id": "bon-de-commande",
+      "name": "Bon de commande",
+      "cat": "Imprimerie & Édition",
+      "price": 13000,
+      "unit": "lot de 10 carnets",
+      "desc": "Bons de commande numérotés pour suivre vos ventes et livraisons.",
+      "details": {
+        "Format": "A4",
+        "Grammage": "80 g",
+        "Quantité": "10 carnets",
+        "Autres": "Triplicate, numérotation automatique"
+      },
+      "badge": null,
+      "img": "assets/catalogue/bon-de-commande.jpg",
+      "source": "Catalogue HaiBer Multi-Services — page 7"
+    },
+    {
+      "id": "roll-up",
+      "name": "Roll up",
+      "cat": "Imprimerie & Édition",
+      "price": 45000,
+      "unit": "pièce",
+      "desc": "Roll up rétractable pour vos présentations et stands.",
+      "details": {
+        "Format": "850 × 2000 mm",
+        "Grammage": "Vinyle 440 g",
+        "Quantité": "1 pièce",
+        "Autres": "Support rétractable inclus"
+      },
+      "badge": null,
+      "img": "assets/catalogue/roll-up.jpg",
+      "source": "Catalogue HaiBer Multi-Services — page 7"
+    },
+    {
+      "id": "carte-pvc",
+      "name": "Carte PVC",
+      "cat": "Imprimerie & Édition",
+      "price": 18000,
+      "unit": "lot de 100",
+      "desc": "Cartes en PVC rigide pour badges, cartes de fidélité et cartes d'accès.",
+      "details": {
+        "Format": "85,6 × 54 mm",
+        "Grammage": "PVC 0,76 mm",
+        "Quantité": "100 pièces",
+        "Autres": "QR code, code-barres ou puce"
+      },
+      "badge": null,
+      "img": "assets/catalogue/carte-pvc.jpg",
+      "source": "Catalogue HaiBer Multi-Services — page 7"
+    },
+    {
+      "id": "sticker",
+      "name": "Sticker",
+      "cat": "Imprimerie & Édition",
+      "price": 7000,
+      "unit": "lot de 100",
+      "desc": "Stickers adhésifs découpés aux couleurs de votre marque.",
+      "details": {
+        "Format": "Sur mesure",
+        "Grammage": "Vinyle adhésif",
+        "Quantité": "100 pièces",
+        "Autres": "Découpe contour, imperméable"
+      },
+      "badge": null,
+      "img": "assets/catalogue/sticker.jpg",
+      "source": "Catalogue HaiBer Multi-Services — page 7"
+    },
+    {
+      "id": "charte-graphique",
+      "name": "Charte graphique",
+      "cat": "Sérigraphie & marquage",
+      "price": 45000,
+      "unit": "forfait",
+      "desc": "Charte graphique complète pour une identité de marque cohérente sur tous vos supports.",
+      "details": {
+        "Format": "Digital",
+        "Grammage": "—",
+        "Quantité": "1 forfait",
+        "Autres": "Logo, couleurs, typographies et règles d'usage"
+      },
+      "badge": "Premium",
+      "img": "assets/catalogue/charte-graphique.jpg",
+      "source": "Catalogue HaiBer Multi-Services — page 7"
+    },
+    {
+      "id": "banniere-reseau",
+      "name": "Bannière réseau",
+      "cat": "Sérigraphie & marquage",
+      "price": 15000,
+      "unit": "kit",
+      "desc": "Kit de bannières pour réseaux sociaux, aux formats de chaque plateforme.",
+      "details": {
+        "Format": "1200 × 628 px et variantes",
+        "Grammage": "Digital",
+        "Quantité": "1 kit",
+        "Autres": "Facebook, Instagram, LinkedIn, WhatsApp"
+      },
+      "badge": null,
+      "img": "assets/catalogue/banniere-reseau.jpg",
+      "source": "Catalogue HaiBer Multi-Services — page 7"
+    },
+    {
+      "id": "declinaison",
+      "name": "Déclinaison",
+      "cat": "Sérigraphie & marquage",
+      "price": 25000,
+      "unit": "kit",
+      "desc": "Déclinaison de votre identité sur tous vos supports de communication.",
+      "details": {
+        "Format": "Multi-supports",
+        "Grammage": "Digital & print",
+        "Quantité": "1 kit",
+        "Autres": "Enseigne, véhicule, papier, réseaux"
+      },
+      "badge": null,
+      "img": "assets/catalogue/declinaison.jpg",
+      "source": "Catalogue HaiBer Multi-Services — page 7"
+    },
+    {
+      "id": "sous-main",
+      "name": "Sous-main",
+      "cat": "Imprimerie & Édition",
+      "price": 14000,
+      "unit": "lot de 10",
+      "desc": "Sous-main personnalisé pour vos bureaux et espaces d'accueil.",
+      "details": {
+        "Format": "500 × 650 mm",
+        "Grammage": "PVC 0,5 mm",
+        "Quantité": "10 pièces",
+        "Autres": "Impression couleur de votre logo"
+      },
+      "badge": null,
+      "img": "assets/catalogue/sous-main.jpg",
+      "source": "Catalogue HaiBer Multi-Services — page 7"
+    },
+    {
+      "id": "t-shirt",
+      "name": "T-shirt personnalisé",
+      "cat": "Sérigraphie & marquage",
+      "price": 2500,
+      "unit": "pièce · min. 10",
+      "desc": "T-shirt personnalisé par sérigraphie, DTF ou broderie, encre vibrante et durable.",
+      "details": {
+        "Format": "S à XXL",
+        "Grammage": "Coton 180 g",
+        "Quantité": "10 pièces",
+        "Autres": "Sérigraphie, DTF ou broderie"
+      },
+      "badge": "Best-seller",
+      "img": "assets/catalogue/t-shirt.jpg",
+      "source": "Catalogue HaiBer Multi-Services — page 9"
+    },
+    {
+      "id": "polo",
+      "name": "Polo personnalisé",
+      "cat": "Sérigraphie & marquage",
+      "price": 5500,
+      "unit": "pièce · min. 10",
+      "desc": "Polo d'entreprise avec logo brodé ou imprimé.",
+      "details": {
+        "Format": "S à XXL",
+        "Grammage": "Coton piqué 220 g",
+        "Quantité": "10 pièces",
+        "Autres": "Broderie poitrine ou sérigraphie"
+      },
+      "badge": null,
+      "img": "assets/catalogue/polo.jpg",
+      "source": "Catalogue HaiBer Multi-Services — page 9"
+    },
+    {
+      "id": "gilet",
+      "name": "Gilet personnalisé",
+      "cat": "Sérigraphie & marquage",
+      "price": 6500,
+      "unit": "pièce · min. 10",
+      "desc": "Gilet de travail ou d'équipe marqué à votre couleurs.",
+      "details": {
+        "Format": "S à XXL",
+        "Grammage": "Polaire 280 g",
+        "Quantité": "10 pièces",
+        "Autres": "Broderie ou sérigraphie"
+      },
+      "badge": null,
+      "img": "assets/catalogue/gilet.jpg",
+      "source": "Catalogue HaiBer Multi-Services — page 9"
+    },
+    {
+      "id": "tasse",
+      "name": "Tasse personnalisée",
+      "cat": "Sérigraphie & marquage",
+      "price": 2500,
+      "unit": "pièce · min. 10",
+      "desc": "Tasse imprimée au logo, idéale pour cadeaux d'entreprise et événements.",
+      "details": {
+        "Format": "330 ml",
+        "Grammage": "Céramique",
+        "Quantité": "10 pièces",
+        "Autres": "Impression sublimation, lave-vaisselle"
+      },
+      "badge": "Populaire",
+      "img": "assets/catalogue/tasse.jpg",
+      "source": "Catalogue HaiBer Multi-Services — page 9"
+    },
+    {
+      "id": "gourde",
+      "name": "Gourde isotherme",
+      "cat": "Sérigraphie & marquage",
+      "price": 9900,
+      "unit": "pièce · min. 5",
+      "desc": "Gourde isotherme personnalisée, cadeau utile et durable.",
+      "details": {
+        "Format": "500 ml",
+        "Grammage": "Inox isotherme",
+        "Quantité": "5 pièces",
+        "Autres": "Gravure laser ou sérigraphie"
+      },
+      "badge": null,
+      "img": "assets/catalogue/gourde.jpg",
+      "source": "Catalogue HaiBer Multi-Services — page 9"
+    },
+    {
+      "id": "porte-cle",
+      "name": "Porte-clé personnalisé",
+      "cat": "Sérigraphie & marquage",
+      "price": 2500,
+      "unit": "pièce · min. 20",
+      "desc": "Porte-clé publicitaire en métal ou résine, avec votre logo.",
+      "details": {
+        "Format": "Sur mesure",
+        "Grammage": "Métal / résine",
+        "Quantité": "20 pièces",
+        "Autres": "Gravure ou impression couleur"
+      },
+      "badge": null,
+      "img": "assets/catalogue/porte-cle.jpg",
+      "source": "Catalogue HaiBer Multi-Services — page 9"
+    },
+    {
+      "id": "broderie",
+      "name": "Broderie",
+      "cat": "Sérigraphie & marquage",
+      "price": 2000,
+      "unit": "pièce · min. 10",
+      "desc": "Broderie haute durabilité pour textiles et uniformes.",
+      "details": {
+        "Format": "Sur textile",
+        "Grammage": "Fil polyester",
+        "Quantité": "10 pièces",
+        "Autres": "Multicolore, finition nette"
+      },
+      "badge": null,
+      "img": "assets/catalogue/broderie.jpg",
+      "source": "Catalogue HaiBer Multi-Services — page 9"
+    },
+    {
+      "id": "dtf",
+      "name": "Impression DTF",
+      "cat": "Sérigraphie & marquage",
+      "price": 1800,
+      "unit": "pièce · min. 10",
+      "desc": "Impression DTF haute définition sur tous types de textiles.",
+      "details": {
+        "Format": "Sur textile",
+        "Grammage": "Film transfert",
+        "Quantité": "10 pièces",
+        "Autres": "Couleurs vibrantes, résistant au lavage"
+      },
+      "badge": null,
+      "img": "assets/catalogue/dtf.jpg",
+      "source": "Catalogue HaiBer Multi-Services — page 9"
+    },
+    {
+      "id": "stylo",
+      "name": "Stylo personnalisé",
+      "cat": "Sérigraphie & marquage",
+      "price": 1200,
+      "unit": "pièce · min. 100",
+      "desc": "Stylo avec logo pour vos kits, salons et cadeaux.",
+      "details": {
+        "Format": "Standard",
+        "Grammage": "Plastique / métal",
+        "Quantité": "100 pièces",
+        "Autres": "Gravure ou tampographie"
+      },
+      "badge": null,
+      "img": "assets/catalogue/stylo.jpg",
+      "source": "Catalogue HaiBer Multi-Services — page 9"
+    },
+    {
+      "id": "tapis-de-souris",
+      "name": "Tapis de souris",
+      "cat": "Sérigraphie & marquage",
+      "price": 3500,
+      "unit": "pièce · min. 10",
+      "desc": "Tapis de souris personnalisé par sublimation.",
+      "details": {
+        "Format": "250 × 200 mm",
+        "Grammage": "Caoutchouc",
+        "Quantité": "10 pièces",
+        "Autres": "Impression sublimation"
+      },
+      "badge": null,
+      "img": "assets/catalogue/tapis-de-souris.jpg",
+      "source": "Catalogue HaiBer Multi-Services — page 9"
+    },
+    {
+      "id": "casquette",
+      "name": "Casquette personnalisée",
+      "cat": "Sérigraphie & marquage",
+      "price": 5500,
+      "unit": "pièce · min. 10",
+      "desc": "Casquette brodée ou imprimée avec votre logo.",
+      "details": {
+        "Format": "Ajustable",
+        "Grammage": "Coton",
+        "Quantité": "10 pièces",
+        "Autres": "Broderie 3D ou sérigraphie"
+      },
+      "badge": null,
+      "img": "assets/catalogue/casquette.jpg",
+      "source": "Catalogue HaiBer Multi-Services — page 9"
+    },
+    {
+      "id": "carton",
+      "name": "Carton personnalisé",
+      "cat": "Sérigraphie & marquage",
+      "price": 900,
+      "unit": "pièce · min. 100",
+      "desc": "Carton d'emballage imprimé et découpé sur mesure.",
+      "details": {
+        "Format": "Sur mesure",
+        "Grammage": "Carton ondulé",
+        "Quantité": "100 pièces",
+        "Autres": "Impression, découpe et pliage"
+      },
+      "badge": null,
+      "img": "assets/catalogue/carton.jpg",
+      "source": "Catalogue HaiBer Multi-Services — page 9"
+    },
+    {
+      "id": "porte-cle-resine",
+      "name": "Porte-clé résine",
+      "cat": "Résine & objets",
+      "price": 3000,
+      "unit": "pièce · min. 20",
+      "desc": "Porte-clé en résine époxy avec inclusions et couleurs personnalisées.",
+      "details": {
+        "Format": "Sur mesure",
+        "Grammage": "Résine époxy",
+        "Quantité": "20 pièces",
+        "Autres": "Inclusions, pigments et formes variées"
+      },
+      "badge": "Nouveau",
+      "img": "assets/catalogue/porte-cle-resine.jpg",
+      "source": "Catalogue HaiBer Multi-Services — page 10"
+    },
+    {
+      "id": "coque-de-telephone",
+      "name": "Coque de téléphone résine",
+      "cat": "Résine & objets",
+      "price": 5000,
+      "unit": "pièce · min. 10",
+      "desc": "Coque de téléphone personnalisée en résine, motif unique et protection durable.",
+      "details": {
+        "Format": "Sur mesure (modèle)",
+        "Grammage": "Résine / TPU",
+        "Quantité": "10 pièces",
+        "Autres": "Motif personnalisé, finition brillante"
+      },
+      "badge": null,
+      "img": "assets/catalogue/coque-de-telephone.jpg",
+      "source": "Catalogue HaiBer Multi-Services — page 10"
+    },
+    {
+      "id": "bloc-note-resine",
+      "name": "Bloc note résine",
+      "cat": "Résine & objets",
+      "price": 14900,
+      "unit": "pièce · min. 10",
+      "desc": "Bloc note avec couverture en résine personnalisée, objet design et utile.",
+      "details": {
+        "Format": "A6",
+        "Grammage": "Résine + papier 90 g",
+        "Quantité": "10 pièces",
+        "Autres": "Couverture résine, pages personnalisables"
+      },
+      "badge": null,
+      "img": "assets/catalogue/bloc-note-resine.jpg",
+      "source": "Catalogue HaiBer Multi-Services — page 10"
+    },
+    {
+      "id": "identite",
+      "name": "Identité visuelle complète",
+      "cat": "Sérigraphie & marquage",
+      "price": 45000,
+      "unit": "forfait",
+      "desc": "Logo, charte couleurs, typographies et déclinaisons de marque.",
+      "details": {
+        "Format": "Digital",
+        "Grammage": "—",
+        "Quantité": "1 forfait",
+        "Autres": "Livrable complet, fichiers sources inclus"
+      },
+      "badge": "Premium",
+      "img": "assets/catalogue/identite.jpg",
+      "source": "Catalogue HaiBer Multi-Services — page 7"
+    },
+    {
+      "id": "pack-entreprise",
+      "name": "PACK ENTREPRISE",
+      "cat": "Sérigraphie & marquage",
+      "price": 75500,
+      "unit": "pack · −20 %",
+      "desc": "Logo pro, entête, 100 cartes de visite, 100 flyers et 10 carnets de factures.",
+      "details": {
+        "Format": "Pack complet",
+        "Grammage": "—",
+        "Quantité": "1 pack",
+        "Autres": "Économie de 20 % sur les prestations réunies"
+      },
+      "badge": "−20 %",
+      "img": "assets/catalogue/pack-entreprise.jpg",
+      "source": "Catalogue HaiBer Multi-Services — page 6"
+    },
+    {
+      "id": "pack-gadgets",
+      "name": "PACK GADGETS",
+      "cat": "Sérigraphie & marquage",
+      "price": 150000,
+      "unit": "pack · −20 %",
+      "desc": "20 t-shirts, 20 casquettes, 10 tasses, 10 porte-clés et 10 stylos personnalisés.",
+      "details": {
+        "Format": "Pack complet",
+        "Grammage": "—",
+        "Quantité": "1 pack",
+        "Autres": "Économie de 20 % sur les objets réunis"
+      },
+      "badge": "−20 %",
+      "img": "assets/catalogue/pack-gadgets.jpg",
+      "source": "Catalogue HaiBer Multi-Services — page 9"
+    },
+    {
+      "id": "pack-cadeau",
+      "name": "PACK CADEAU / CALENDAR",
+      "cat": "Imprimerie & Édition",
+      "price": 157500,
+      "unit": "pack · −20 %",
+      "desc": "50 calendriers muraux, 20 de table, 100 cartes de vœux, 10 blocs-notes et 10 tasses.",
+      "details": {
+        "Format": "Pack complet",
+        "Grammage": "—",
+        "Quantité": "1 pack",
+        "Autres": "Idéal pour remercier clients et partenaires"
+      },
+      "badge": "−20 %",
+      "img": "assets/catalogue/pack-cadeau.jpg",
+      "source": "Catalogue HaiBer Multi-Services — page 5"
+    },
+    {
+      "id": "pack-premium",
+      "name": "PACK PREMIUM",
+      "cat": "Sérigraphie & marquage",
+      "price": 165000,
+      "unit": "pack · −20 %",
+      "desc": "Calendriers, cartes de vœux, blocs-notes, tasses, t-shirts, casquettes et porte-clés.",
+      "details": {
+        "Format": "Pack complet",
+        "Grammage": "—",
+        "Quantité": "1 pack",
+        "Autres": "La formule complète pour votre marque"
+      },
+      "badge": "−20 %",
+      "img": "assets/catalogue/pack-premium.jpg",
+      "source": "Catalogue HaiBer Multi-Services — page 9"
+    }
+  ]
+}

@@ -8,13 +8,17 @@ Site professionnel autonome, inspiré de `visibleemballage.com`, construit à pa
 
 Hébergement gratuit sur GitHub Pages (dépôt public `haibermultiservices564-gif/haiber-site`, branche `main`, racine). Le fichier `.nojekyll` désactive le traitement Jekyll, `robots.txt` déclare le `sitemap.xml`, et tous les chemins sont relatifs : le site fonctionne donc dans un sous-dossier. Audits Lighthouse en ligne : **Accessibilité 100/100, Bonnes pratiques 100/100, SEO 100/100**.
 
+## Relation avec l’application HaiBer Gestion
+
+`catalogue.json` est la **source unique** partagée. Le site la publie à l’URL publique ; l’application web `https://haibermultiservices564-gif.github.io/haiber-gestion/` la récupère en direct (GitHub Pages, puis API GitHub) et garde une copie locale `assets/catalogue.json` + un cache pour fonctionner hors ligne. Un produit choisi dans l’application alimente directement le moteur de devis et le bouton WhatsApp du site. Le pied de page du site renvoie vers l’application.
+
 ## Ouvrir le site
 
 Double-cliquez sur `index.html` (Chrome, Edge ou Firefox). Aucun serveur, aucune installation et aucune connexion Internet ne sont nécessaires. Les polices Google sont utilisées si Internet est disponible ; sinon une police système équivalente prend le relais.
 
 ## Ce que contient le site
 
-- **Boutique en ligne** : 56 produits et prestations, chacun avec son **mockup dédié** (`assets/produits/<id>.svg`) adapté à la référence — boîtes, étiquettes, flyers, bâches, t-shirts, tasses, résine, vidéo, packs, fournitures scolaires, etc. Filtres par catégorie, recherche, tri, panier persistant (`localStorage`), quantités et total estimé.
+- **Catalogue officiel & boutique en ligne** : **62 références** extraites du `Catalogue HB VERSION FINAL.pdf`, chacune avec sa **photo réelle** (`assets/catalogue/<id>.jpg`) et sa fiche complète (format, grammage, quantité, finitions). Filtres par catégorie, recherche, tri, panier persistant (`localStorage`), quantités et total estimé. La section `#catalogue` présente les trois chapitres du catalogue PDF.
 - **Devis en ligne en 3 étapes** : choix de l'atelier, options et quantités, estimation instantanée, envoi pré-rempli vers WhatsApp. Le panier peut être converti en devis en un clic.
 - **5 ateliers + accompagnement** : conception, packaging, imprimerie/sérigraphie, multi-média/motion design, résine, accompagnement 360°.
 - **Offres & packs** : quatre packs promotionnels (PACK ENTREPRISE, PACK GADGETS, PACK CADEAU / CALENDAR, PACK PREMIUM), présentés avec leur contenu détaillé et une remise de −20 %.
