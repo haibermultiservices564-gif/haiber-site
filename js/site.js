@@ -354,6 +354,30 @@
     window.open(WHATSAPP + '?text=' + encodeURIComponent(message), '_blank', 'noopener');
   }
 
+  function animateCounters(scope) {
+    if (!scope) return;
+    const targets = $$('[data-count]', scope);
+    const reduced = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    if (reduced) {
+      targets.forEach(el => { el.textContent = el.dataset.count + (el.dataset.suffix || ''); });
+      return;
+    }
+    targets.forEach(el => {
+      const end = Number(el.dataset.count) || 0;
+      const suffix = el.dataset.suffix || '';
+      const start = performance.now();
+      const duration = 900;
+      const tick = (now) => {
+        const t = Math.min(1, (now - start) / duration);
+        const eased = 1 - Math.pow(1 - t, 3);
+        el.textContent = Math.round(end * eased) + suffix;
+        if (t < 1) requestAnimationFrame(tick);
+      };
+      el.textContent = '0' + suffix;
+      requestAnimationFrame(tick);
+    });
+  }
+
   function productById(id) { return PRODUCTS.find(p => p.id === id); }
 
   /* ---------------- Boutique ---------------- */
@@ -766,6 +790,10 @@
     // Devis
     $('#hero-quote').onclick = () => openQuote();
     $('#open-quote').onclick = () => openQuote();
+    const dockQuote = $('#dock-quote');
+    if (dockQuote) dockQuote.onclick = () => openQuote();
+    const dockCart = $('#dock-cart');
+    if (dockCart) dockCart.onclick = () => openCart();
     $('#gallery-quote').onclick = () => openQuote('Conception');
     $('#branding-quote').onclick = () => openQuote('Branding véhicule');
     $$('[data-service]').forEach(b => b.onclick = () => openQuote(SERVICE_MAP[b.dataset.service] || 'Accompagnement'));
@@ -809,10 +837,19 @@
       $('#menu-toggle').setAttribute('aria-expanded', 'false');
     });
 
-    // Header au scroll
-    const onScroll = () => $('#header').classList.toggle('scrolled', window.scrollY > 12);
+    // Header & barre de progression au scroll
+    const progress = $('#scroll-progress');
+    const onScroll = () => {
+      $('#header').classList.toggle('scrolled', window.scrollY > 12);
+      if (progress) {
+        const max = document.documentElement.scrollHeight - window.innerHeight;
+        const percent = max > 0 ? Math.min(100, (window.scrollY / max) * 100) : 0;
+        progress.style.width = percent.toFixed(2) + '%';
+      }
+    };
     onScroll();
     window.addEventListener('scroll', onScroll, { passive: true });
+    window.addEventListener('resize', onScroll, { passive: true });
 
     // Liens actifs dans la navigation
     const sections = ['accueil', 'boutique', 'promotions', 'services', 'branding', 'realisations', 'devis', 'apropos', 'contact'];
@@ -832,7 +869,11 @@
     if ('IntersectionObserver' in window) {
       const revObs = new IntersectionObserver(entries => {
         entries.forEach(en => {
-          if (en.isIntersecting) { en.target.classList.add('is-visible'); revObs.unobserve(en.target); }
+          if (en.isIntersecting) {
+            en.target.classList.add('is-visible');
+            if (en.target.classList.contains('stats-bar')) animateCounters(en.target);
+            revObs.unobserve(en.target);
+          }
         });
       }, { threshold: .1, rootMargin: '0px 0px -40px 0px' });
       reveals.forEach(el => revObs.observe(el));
