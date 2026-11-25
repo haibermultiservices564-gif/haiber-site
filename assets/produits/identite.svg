@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 380" width="640" height="380" role="img">
+<defs>
+<linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#ffffff"/><stop offset="1" stop-color="#f1f4fb"/></linearGradient>
+<linearGradient id="bl" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#546CC0"/><stop offset="1" stop-color="#2B3C86"/></linearGradient>
+<linearGradient id="pk" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#F44DA2"/><stop offset="1" stop-color="#BE0D69"/></linearGradient>
+<linearGradient id="or" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#FFB056"/><stop offset="1" stop-color="#E37A16"/></linearGradient>
+<linearGradient id="gd" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#FCEEB4"/><stop offset=".48" stop-color="#C79A2E"/><stop offset="1" stop-color="#F7DD85"/></linearGradient>
+<linearGradient id="gl" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#fff" stop-opacity=".8"/><stop offset=".45" stop-color="#fff" stop-opacity=".05"/><stop offset="1" stop-color="#fff" stop-opacity=".4"/></linearGradient>
+<filter id="sh" x="-30%" y="-30%" width="160%" height="180%"><feDropShadow dx="0" dy="9" stdDeviation="9" flood-color="#172450" flood-opacity=".17"/></filter>
+<filter id="sh2" x="-30%" y="-30%" width="160%" height="180%"><feDropShadow dx="0" dy="4" stdDeviation="4" flood-color="#172450" flood-opacity=".20"/></filter>
+<pattern id="dots" width="16" height="16" patternUnits="userSpaceOnUse"><circle cx="3" cy="3" r="1.5" fill="#fff" opacity=".5"/></pattern>
+<pattern id="perf" width="13" height="13" patternUnits="userSpaceOnUse"><circle cx="6.5" cy="6.5" r="2.1" fill="#172450" opacity=".22"/></pattern>
+</defs>
+<rect width="640" height="380" fill="url(#bg)"/>
+<ellipse cx="320" cy="320" rx="205" ry="26" fill="#172450" opacity=".05"/>
+<g transform="rotate(0 320.0 190.0)" filter="url(#sh)"><rect x="132" y="54" width="376" height="272" rx="7" fill="#fff"/><rect x="152" y="74" width="336" height="46" rx="6" fill="#3A4F9E"/><text x="320" y="105" text-anchor="middle" font-family="Arial,Helvetica,sans-serif" font-size="17" font-weight="700" fill="#fff" opacity="1">HaiBer  MULTI-SERVICES</text><g transform="translate(196 188) scale(0.85)"><rect x="-24" y="-29" width="15" height="58" rx="3" fill="#3A4F9E"/><rect x="9" y="-29" width="15" height="58" rx="3" fill="#3A4F9E"/><rect x="-9" y="-8" width="18" height="16" rx="2" fill="#3A4F9E"/><circle cx="28" cy="-27" r="6.5" fill="#E21481"/></g><text x="196" y="252" text-anchor="middle" font-family="Arial,Helvetica,sans-serif" font-size="12" font-weight="700" fill="#0B122F" opacity="1">Logo</text><rect x="300" y="150" width="62" height="62" rx="8" fill="#3A4F9E"/><rect x="370" y="150" width="62" height="62" rx="8" fill="#E21481"/><rect x="440" y="150" width="62" height="62" rx="8" fill="#F88F25"/><text x="331" y="240" text-anchor="middle" font-family="Arial,Helvetica,sans-serif" font-size="26" font-weight="700" fill="#0B122F" opacity="1">Aa  Bb  Cc</text><rect x="300" y="258" width="202" height="5" rx="2.5" fill="#c6cee5"/><rect x="300" y="271" width="202" height="5" rx="2.5" fill="#c6cee5"/></g>
+</svg>
