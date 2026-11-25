@@ -35,7 +35,7 @@ Reprise directe de l’application HaiBer Gestion :
 - Nom : **HaiBer Multi-Services**
 - Tagline : **« Votre communication, notre mission ! »**
 - Couleurs : bleu `#3A4F9E`, magenta `#E21481`, orange `#F88F25`
-- Contact WhatsApp principal HaiBer : **+226 06 87 97 10** — https://wa.me/2266879710
+- Contact WhatsApp principal HaiBer : **+226 06 87 97 10** — https://wa.me/22606879710
 - Autre contact HaiBer : **+226 60 28 31 31** — `tel:+22660283131`
 - E-mail : **haibermultiservices@gmail.com**
 - Atelier : **Cissin, non loin de la boulangerie Wend-Konta, Ouagadougou, Burkina Faso**
@@ -49,7 +49,7 @@ Les prix affichés proviennent des règles métier de `js/store.js` de l’appli
 ## À personnaliser avant mise en ligne
 
 1. **E-mail de contact** : l’adresse en service est `haibermultiservices@gmail.com` (section contact et footer de `index.html`) ; l’ancienne adresse `contact@haiber.bf` ne doit plus être utilisée.
-2. **Numéros et adresse** : le support HaiBer est `+226 06 87 97 10` (https://wa.me/2266879710, constante `WHATSAPP` de `js/site.js`), l’autre contact est `+226 60 28 31 31` (`tel:`), et l’atelier est à **Cissin, non loin de la boulangerie Wend-Konta, Ouagadougou**. Vérifiez ces valeurs dans `index.html`, `js/site.js` et les données structurées du site. Le numéro `+226 55 04 15 30` est réservé au crédit **Touch Unique**, créateur du site et de l’application ; ce n’est pas le support HaiBer.
+2. **Numéros et adresse** : le support HaiBer est `+226 06 87 97 10` (https://wa.me/22606879710, constante `WHATSAPP` de `js/site.js`), l’autre contact est `+226 60 28 31 31` (`tel:`), et l’atelier est à **Cissin, non loin de la boulangerie Wend-Konta, Ouagadougou**. Vérifiez ces valeurs dans `index.html`, `js/site.js` et les données structurées du site. Le numéro `+226 55 04 15 30` est réservé au crédit **Touch Unique**, créateur du site et de l’application ; ce n’est pas le support HaiBer.
 3. **Domaine personnalisé** : le site est déjà en ligne sur l'URL GitHub Pages ci-dessus. Pour passer à `haiber.bf`, ajoutez le domaine dans les paramètres GitHub Pages, puis mettez à jour `sitemap.xml`, `robots.txt`, `manifest.webmanifest` et les balises Open Graph.
 4. **Prix** : modifiez le tableau `PRODUCTS` et l’objet `QUOTE` dans `js/site.js` pour refléter vos tarifs définitifs. Les tarifs grand format (Bâche 2 500 F / Vinyle 3 000 F / Dos bleu 2 000 F / Micro perforé 4 000 F le m²) et les prix des packs sont à jour.
 5. **Témoignages** : les avis affichés restent des **exemples** inspirés des clients de démonstration de l’application. Remplacez-les par de vrais retours clients avant publication.
